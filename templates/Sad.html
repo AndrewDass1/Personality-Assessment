@@ -1,0 +1,71 @@
+<html>
+
+    <h1> Personality: Sad </h1>
+
+    <img src="home/andrew/Documents/Projects/suicidepre/templates/sadface.png"> 
+
+    <style>
+    body {text-align: center;}
+    
+    body{
+    background-color:mediumturquoise
+    }
+    </style>
+
+    <p> 
+        It seems you may be depressed or angry from recent events. Remember to keep working hard and never give up! You will accomplish your dreams!
+        <br>
+        <br>
+        If you are feeling lost, then its advised to talk to a family member or close friend for advice.    
+        <br>
+        <br>
+        If you are feeling suicidal, help is available. Please call 1-800-273-8255 for the Suicide Prevention Lifeline <br>
+        or click the button below to enter the Suicide Prevention Lifeline website.
+    </p>
+
+    
+
+    <button onclick="suicide_website()">Suicide Prevention Lifeline</button>
+
+    <script type= "text/javascript">
+        function suicide_website(){
+            location.replace("https://suicidepreventionlifeline.org/")
+        }
+    </script>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+    If you have a substance use problem, help is available from American Addiction Centers. Please call 886-836-3876 <br>  
+    or click the button below to enter the American Addiction Centers website.
+    <br>
+    <br>
+    
+    <button onclick="addiction()">American Addiction Centers Website</button>
+    <br>
+
+    <script type= "text/javascript">
+        function addiction(){
+            location.replace("https://americanaddictioncenters.org/")
+        }
+    </script>
+
+    <br>
+    <br>
+    <br>
+
+    To return the Personality Quiz click the button below 
+    <br>
+    <br>
+
+    <button onclick="back()">Personality Quiz</button>
+
+    <script type="text/javascript">
+    function back(){
+        location.replace("/")
+    }
+    </script>
+
+</html>
