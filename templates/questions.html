@@ -1,234 +1,163 @@
 <!DOCTYPE html>
-<html>
+  
 <head>
 
-<style>
-  div.a{text-align: center;}
-
-  body { border: 100px solid gray;
-  }
-  
-  h1 {background-color: white;}
-  h2 {background-color: white;}
-  h3 {background-color: white;}
-
-</style>
-
-
-
-<div class="a">
-  <h1>
-  
-    Personality Quiz <br>
-  </h1>
-
-  <h2>
-    Hello! This is a Personality Quiz, where you will be asked 10 questions. Please be honest and a result will always be given once you hit the "Submit" button at the end of the quiz. 
-    <br>
-  </h2>
-
-<h3>
-
-  1. Hello! I hope you had a good day!<br>
-<input type="radio" name="q1" id="1a"> Yes <br>
-<input type="radio" name="q1"> No <br>
-<input type="radio" name="q1" id = "1c"> No, but thank you for asking <br>
-<input type="radio" name="q1"> N/A <br> 
-<br>
-
-2. How many hours do you spend with your family or friends per day?<br>
-<input type="radio" name="q2" id = "2a" > 3 - 5 hours <br>
-<input type="radio" name="q2" id="2b"> 1 - 3 hours <br>
-<input type="radio" name="q2" > 5 or more hours <br>
-<input type="radio" name="q2"> 0 hours <br> 
-<br>
-
-3. How much people did you talk to today? <br>
-<input type="radio" name="q3" > 0 people <br>
-<input type="radio" name="q3" id ="3b"> 5 or more people <br>
-<input type="radio" name="q3" id ="3c"> 1 - 4 people <br>
-<input type="radio" name="q3"> N/A <br> 
-<br>
-
-4. Do you go outside? <br>
-<input type = "radio" name = "q4" id = "4"> Yes <br>
-<input type = "radio" name = "q4" > No <br>
-<input type = "radio" name = "q4" > When I have to <br>
-<input type="radio" name="q4"> N/A <br> 
-<br>
-
-5. If someone buys you food you didn’t ask for and didn’t like, does that bother you? <br>
-<input type = "radio" name = "q5"> Yes <br>
-<input type = "radio" name = "q5" id = "5b" > No <br>
-<input type = "radio" name = "q5" id = "5c" > Yes, but I'm thankful and I'll still eat it <br>
-<input type="radio" name="q5"> N/A <br> 
-<br>
-
-6. Do you have a substance use problem? <br>
-<input type = "radio" name = "q6" > Yes <br>
-<input type = "radio" name = "q6" id = "6" > No <br>
-<input type = "radio" name = "q6" > I use substances, but I do not have a problem <br>
-<input type="radio" name="q6"> N/A <br> 
-<br>
-
-7. Do you visit a doctor? <br>
-<input type = "radio" name = "q7" id = "7" > Yes <br>
-<input type = "radio" name = "q7" > No <br>
-<input type = "radio" name = "q7" > I do not need help from a doctor <br>
-<input type="radio" name="q7"> N/A <br> 
-<br>
-
-8. Does peer pressure get to you? <br>
-<input type = "radio" name = "q8" > Yes <br>
-<input type = "radio" name = "q8" id = "8" > No <br>
-<input type="radio" name="q8"> I am not sure <br> 
-<input type="radio" name="q8"> N/A <br> 
-<br>
-
-9. Do you have a job? <br>
-<input type = "radio" name = "q9" id = "9a" > Yes <br>
-<input type = "radio" name = "q9" > No <br>
-<input type="radio" name="q9" id = "9c"> No, but I am currently applying to places receive a job <br> 
-<input type="radio" name="q9"> No, I have no interest <br> 
-<br>
-
-10. How many hobbies do you have? <br>
-<input type = "radio" name = "q10" id = "10"> 1 - 3<br>
-<input type = "radio" name = "q10"> 4 or more <br>
-<input type = "radio" name = "q10"> 0 - 2 <br>
-<input type = "radio" name = "q10"> None at all <br>
-<br>
-
-  </h3>
-</div>
-
-
+    <style>
+ 
+    body {text-align: center;}
+        
+    </style>
 </head>
-</html>
-
-<html>
-
-
-<!--<style>
-body{
-  background-color:darkgray 
-}
-</style>
+  
 <body>
--->
+    <h1>Personality Quiz</h1>
+  
+        <body>
 
-
-
-</h1>
-
-<button onclick="result()">Submit</button>
-
-<script type="text/javascript">
-
-
-
-
-function result()
-{
-	var total_score=0;
-	if(document.getElementById('1a').checked || document.getElementById('1c').checked)
-		{	
-            total_score = total_score + 1;
-		}
-	if(document.getElementById('2a').checked || document.getElementById('2b').checked)
-		{	
-            total_score = total_score + 1;
-		}
-	if(document.getElementById('3b').checked || document.getElementById('3c').checked)
-		{	
-            total_score = total_score + 1;
-		}
-    if(document.getElementById('4').checked)
-		{	
-            total_score = total_score + 1;
-		}
-    if(document.getElementById('5b').checked || document.getElementById('5c').checked)
-		{	
-            total_score = total_score + 1;
-		}
-    if(document.getElementById('6').checked)
-		{	
-            total_score = total_score + 1;
-		}
-    if(document.getElementById('7').checked)
-		{	
-            total_score = total_score + 1;
-		}
-    if(document.getElementById('8').checked)
-		{	
-            total_score = total_score + 1;
-		}
-    if(document.getElementById('9a').checked || document.getElementById('9c').checked)
-		{	
-            total_score = total_score + 1;
-		}
-    if(document.getElementById('10').checked)
-		{	
-            total_score = total_score + 1;
-		}
-
-    // - comments
-    // alert("Your score is: "+ total_score)
-
-  if(name.getElementById(''))
-   if (total_score == 0){
-       location.replace("1507.html")
-   }
-
-   if (total_score == 1){
-       location.replace("4715.html")
-   }
-
-   if (total_score == 2){
-       location.replace("1721.html")
-   }
-
-   if (total_score == 3){
-       location.replace("4535.html")
-   }
-
-   if (total_score == 4){
-       location.replace("2549.html")
-   }
-
-   if (total_score == 5){
-       location.replace("5751.html")
-   }
-
-   if (total_score == 6){
-       location.replace("4162.html")
-   }
-
-   if (total_score == 7){
-       location.replace("5675.html")
-   }
-
-   if (total_score == 8){
-       location.replace("8685.html")
-   }
-
-   if (total_score == 9){
-       location.replace("2191.html")
-   }
-
-   if (total_score == 10){
-       location.replace("3510.html")
-   }
-   
-}
-
-</script>
-
-<body>
-<form action="https://suicidepreventionlifeline.org/" method="get" target="_blank">
-  <button type ="submit">National Suicide Prevention Lifeline</button>
-</form>
+            1. Hello! I hope you had a good day!<br>
+            <input type="radio" name="q1" id="1a"> Yes <br>
+            <input type="radio" name="q1"> No <br>
+            <input type="radio" name="q1" id = "1c"> No, but thank you for asking <br>
+            <input type="radio" name="q1"> N/A <br> 
+            <br>
+            
+            2. How many hours do you spend with your family or friends per day?<br>
+            <input type="radio" name="q2" id = "2a" > 3 - 5 hours <br>
+            <input type="radio" name="q2" id="2b"> 1 - 3 hours <br>
+            <input type="radio" name="q2" > 5 or more hours <br>
+            <input type="radio" name="q2"> 0 hours <br> 
+            <br>
+            
+            3. How much people did you talk to today? <br>
+            <input type="radio" name="q3" > 0 people <br>
+            <input type="radio" name="q3" id ="3b"> 5 or more people <br>
+            <input type="radio" name="q3" id ="3c"> 1 - 4 people <br>
+            <input type="radio" name="q3"> N/A <br> 
+            <br>
+            
+            4. Do you go outside? <br>
+            <input type = "radio" name = "q4" id = "4"> Yes <br>
+            <input type = "radio" name = "q4" > No <br>
+            <input type = "radio" name = "q4" > When I have to <br>
+            <input type="radio" name="q4"> N/A <br> 
+            <br>
+            
+            5. If someone buys you food you didn’t ask for and didn’t like, does that bother you? <br>
+            <input type = "radio" name = "q5"> Yes <br>
+            <input type = "radio" name = "q5" id = "5b" > No <br>
+            <input type = "radio" name = "q5" id = "5c" > Yes, but I'm thankful and I'll still eat it <br>
+            <input type="radio" name="q5"> N/A <br> 
+            <br>
+            
+            6. Do you have a substance use problem? <br>
+            <input type = "radio" name = "q6" > Yes <br>
+            <input type = "radio" name = "q6" id = "6" > No <br>
+            <input type = "radio" name = "q6" > I use substances, but I do not have a problem <br>
+            <input type="radio" name="q6"> N/A <br> 
+            <br>
+            
+            7. Do you visit a doctor? <br>
+            <input type = "radio" name = "q7" id = "7" > Yes <br>
+            <input type = "radio" name = "q7" > No <br>
+            <input type = "radio" name = "q7" > I do not need help from a doctor <br>
+            <input type="radio" name="q7"> N/A <br> 
+            <br>
+            
+            8. Does peer pressure get to you? <br>
+            <input type = "radio" name = "q8" > Yes <br>
+            <input type = "radio" name = "q8" id = "8" > No <br>
+            <input type="radio" name="q8"> I am not sure <br> 
+            <input type="radio" name="q8"> N/A <br> 
+            <br>
+            
+            9. Do you have a job? <br>
+            <input type = "radio" name = "q9" id = "9a" > Yes <br>
+            <input type = "radio" name = "q9" > No <br>
+            <input type="radio" name="q9" id = "9c"> No, but I am currently applying to places receive a job <br> 
+            <input type="radio" name="q9"> No, I have no interest <br> 
+            <br>
+            
+            10. How many hobbies do you have? <br>
+            <input type = "radio" name = "q10" id = "10a"> 1 - 3<br>
+            <input type = "radio" name = "q10" id = "10b" > 4 or more <br>
+            <input type = "radio" name = "q10"> 0 - 2 <br>
+            <input type = "radio" name = "q10"> None at all <br>
+            <br>
+            
+            <button onclick="result()">Submit</button>
+            
+        
+            <script type="text/javascript">
+            
+            
+            function result()
+            {
+                var total_score=0;
+                if(document.getElementById('1a').checked || document.getElementById('1c').checked)
+                    {	
+                        total_score = total_score + 1;
+                    }
+                if(document.getElementById('2a').checked || document.getElementById('2b').checked)
+                    {	
+                        total_score = total_score + 1;
+                    }
+                if(document.getElementById('3b').checked || document.getElementById('3c').checked)
+                    {	
+                        total_score = total_score + 1;
+                    }
+                if(document.getElementById('4').checked)
+                    {	
+                        total_score = total_score + 1;
+                    }
+                if(document.getElementById('5b').checked || document.getElementById('5c').checked)
+                    {	
+                        total_score = total_score + 1;
+                    }
+                if(document.getElementById('6').checked)
+                    {	
+                        total_score = total_score + 1;
+                    }
+                if(document.getElementById('7').checked)
+                    {	
+                        total_score = total_score + 1;
+                    }
+                if(document.getElementById('8').checked)
+                    {	
+                        total_score = total_score + 1;
+                    }
+                if(document.getElementById('9a').checked || document.getElementById('9c').checked)
+                    {	
+                        total_score = total_score + 1;
+                    }
+                if(document.getElementById('10a').checked || document.getElementById('10b').checked)
+                    {	
+                        total_score = total_score + 1;
+                    }
+            
+            
+               if (total_score == 0 || total_score == 1 || total_score == 2 || total_score == 3 || total_score == 4 || total_score == 5){
+                   location.replace("Sad.html")
+               }
+               if (total_score == 6 || total_score == 7){
+                   location.replace("Neutral.html")
+               }
+               if (total_score == 8 || total_score == 9){
+                   location.replace("Happy.html")
+               }
+               if (total_score == 10){
+                   location.replace("Strong.html")
+               }
+            
+               
+            }
+            
+            </script>
+            
+            
+            </body>
+        
+  
+        
 </body>
-
-
+  
 </html>
