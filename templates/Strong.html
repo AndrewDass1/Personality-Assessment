@@ -1,17 +1,24 @@
 <html>
 
-    <h1> Personality: Strong-Willed </h1>
-
-    <img src="home/andrew/Documents/Projects/suicidepre/templates/happyface.png">
-
     <style>
+        body {text-align: center;}
     
-    body {text-align: center;}
-
-    body{
-    background-color:orange
-    }
+        body {
+            background-color: orange;
+        }
+        div {
+            height: 1350px;
+            margin: 150px;
+            border: 5px solid;
+            background-color: #FFFFFF;
+        }
     </style>
+
+    <div>
+
+        <h1> Personality: Strong-Willed </h1>
+
+        <img src="home/andrew/Documents/Projects/suicidepre/templates/happyface.png">    
 
     <p> 
         You make good decisions because you are self-concious of your actions and want to better youself, and these are qualities <br>
@@ -26,33 +33,22 @@
     </p>
    
 
-    <button onclick="suicide_website()">Suicide Prevention Lifeline</button>
-
-    <script type= "text/javascript">
-        function suicide_website(){
-            location.replace("https://suicidepreventionlifeline.org/")
-        }
-    </script>
+    <button class="btn btn-success" onclick=" window.open('https://suicidepreventionlifeline.org/','_blank')"> Suicide Prevention Lifeline</button>
 
     <br>
     <br>
     <br>
     <br>
 
-    If you have a substance use problem, help is available from American Addiction Centers. Please call 886-836-3876 <br>  
+    If you have a substance use problem, help is available from American Addiction Centers. Please call 886-827-2824 <br>  
     or click the button below to enter the American Addiction Centers website.
     <br>
     <br>
     
-    <button onclick="addiction()">American Addiction Centers Website</button>
+
+    <button class="btn btn-success" onclick=" window.open('https://americanaddictioncenters.org/','_blank')"> American Addiction Centers Website</button>
+
     <br>
-
-    <script type= "text/javascript">
-        function addiction(){
-            location.replace("https://americanaddictioncenters.org/")
-        }
-    </script>
-
     <br>
     <br>
     <br>
@@ -68,5 +64,6 @@
         location.replace("/")
     }
     </script>
+    </div>
 
 </html>
