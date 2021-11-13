@@ -1,16 +1,25 @@
 <html>
 
-    <h1> Personality: Sad </h1>
-
-    <img src="home/andrew/Documents/Projects/suicidepre/templates/sadface.png"> 
-
     <style>
-    body {text-align: center;}
+        body {text-align: center;}
     
-    body{
-    background-color:mediumturquoise
-    }
+        body {
+            background-color: #77c9f0;
+        }
+        div {
+            height: 1350px;
+            margin: 150px;
+            border: 5px solid;
+            background-color: #FFFFFF;
+        }
     </style>
+
+    <div>
+
+        <h1> Personality: Sad </h1>
+
+        <img src="home/andrew/Documents/Projects/suicidepre/templates/sadface.png"> 
+        
 
     <p> 
         It seems you may be depressed or angry from recent events. Remember to keep working hard and never give up! You will accomplish your dreams!
@@ -24,34 +33,21 @@
     </p>
 
     
-
-    <button onclick="suicide_website()">Suicide Prevention Lifeline</button>
-
-    <script type= "text/javascript">
-        function suicide_website(){
-            location.replace("https://suicidepreventionlifeline.org/")
-        }
-    </script>
+    <button class="btn btn-success" onclick=" window.open('https://suicidepreventionlifeline.org/','_blank')"> Suicide Prevention Lifeline</button>
 
     <br>
     <br>
     <br>
     <br>
 
-    If you have a substance use problem, help is available from American Addiction Centers. Please call 886-836-3876 <br>  
+    If you have a substance use problem, help is available from American Addiction Centers. Please call 886-827-2824 <br>  
     or click the button below to enter the American Addiction Centers website.
     <br>
     <br>
     
-    <button onclick="addiction()">American Addiction Centers Website</button>
+    <button class="btn btn-success" onclick=" window.open('https://americanaddictioncenters.org/','_blank')"> American Addiction Centers Website</button>
+
     <br>
-
-    <script type= "text/javascript">
-        function addiction(){
-            location.replace("https://americanaddictioncenters.org/")
-        }
-    </script>
-
     <br>
     <br>
     <br>
@@ -67,5 +63,8 @@
         location.replace("/")
     }
     </script>
+
+    </div>
+    
 
 </html>
