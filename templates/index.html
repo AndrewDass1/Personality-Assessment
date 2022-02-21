@@ -10,18 +10,33 @@
         background-color: #818181;
     }
     div {
-        height: 1350px;
+        height: 3350px;
         margin: 150px;
         border: 5px solid;
         background-color: #FFFFFF;
     }
+
+    .button {
+        background-color: #777777;
+        border: 2px solid black;
+        color: white;
+        padding: 30px 64px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 32px;
+        margin: 4px 2px;
+        cursor: pointer;
+        }
+
 </style>
 
 <body>
     <div>        
-        <h1>Personality Quiz</h1>
-  
-        <body>
+        <h1 style = "font-size:100px;"> Personality Quiz </h1>
+        <h2 style = "font-size:60px;"> Hello! This is a 10 question assessment to depict your current emotion. Please answer the questions honestly and submit the test. Thank you. </h2>
+
+        <p style = "font-size:36px;"> 
 
             1. Hello! I hope you had a good day!<br>
             <input type="radio" name="q1" id="1a"> Yes <br>
@@ -93,7 +108,10 @@
             <input type = "radio" name = "q10"> None at all <br>
             <br>
             
-            <button onclick="result()">Submit</button>
+             </p>
+
+            <button onclick="result()" class="button">Submit</button>
+
             <!--<button class="btn btn-success" onclick=" window.open('Sad.html','_blank')"> Submit</button>-->
         
             <script type="text/javascript">
