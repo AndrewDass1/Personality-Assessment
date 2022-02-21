@@ -6,3 +6,4 @@ MarkupSafe==2.0.1
 pip==20.0.2 
 setuptools==44.0.0 
 Werkzeug==2.0.2
+gunicorn==20.1.0
