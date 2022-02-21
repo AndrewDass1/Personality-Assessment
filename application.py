@@ -6,7 +6,7 @@ application = app = Flask(__name__)
 
 @app.route('/')
 def quest():
-    return render_template('questions.html')
+    return render_template('index.html')
 
 @app.route('/Sad.html')
 def emotion1():
