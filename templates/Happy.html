@@ -7,25 +7,39 @@
             background-color: yellow;
         }
         div {
-            height: 1350px;
+            height: 1500px;
             margin: 150px;
             border: 5px solid;
             background-color: #FFFFFF;
         }
+
+        .button {
+        background-color: #fffb00;
+        border: 2px solid black;
+        color: rgb(0, 0, 0);
+        padding: 30px 64px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 32px;
+        margin: 4px 2px;
+        cursor: pointer;
+        }
+
     </style>
 
     <div> 
 
-        <h1> Personality: Happy </h1>
+        <h1 style = "font-size:100px;"> Personality: Happy </h1>
+
 
         <img src="home/andrew/Documents/Projects/suicidepre/templates/happyface.png">
 
-    <p> 
-        You make good decisions and you should be proud of yourself. Keep working hard and making good decisions! <br>
-        Remember it is recommended to take breaks to relax and not overstress yourself. 
+    <p style = "font-size:36px;"> 
+        You make good decisions and you should be proud of yourself. Keep working hard and make good decisions! Remember it is recommended to take breaks to relax and not overstress yourself. 
         <br>
         <br>
-        If you are feeling lost and need advice for a problem, then its advised to talk to a family member or close friend for help. 
+        If you are feeling lost, then its advised to talk to a family member or a close friend for advice.    
         <br>
         <br>
         If you are feeling suicidal, help is available. Please call 1-800-273-8255 for the Suicide Prevention Lifeline <br>
@@ -34,30 +48,32 @@
 
    
 
-    <button class="btn btn-success" onclick=" window.open('https://suicidepreventionlifeline.org/','_blank')"> Suicide Prevention Lifeline</button>
+    <button class="button" onclick=" window.open('https://suicidepreventionlifeline.org/','_blank')"> Suicide Prevention Lifeline</button>
+
 
     <br>
     <br>
     <br>
     <br>
 
-    If you have a substance use problem, help is available from American Addiction Centers. Please call 886-827-2824 <br>  
-    or click the button below to enter the American Addiction Centers website.
+    <p style = "font-size: 36;"> If you have a substance use problem, help is available from American Addiction Centers. Please call 886-827-2824 or click the button below to enter the American Addiction Centers website.
+    </p>
+
     <br>
     <br>
     
-    <button class="btn btn-success" onclick=" window.open('https://americanaddictioncenters.org/','_blank')"> American Addiction Centers Website</button>
+    <button class="button" onclick=" window.open('https://americanaddictioncenters.org/','_blank')"> American Addiction Centers Website</button>
 
     <br>
     <br>
     <br>
     <br>
 
-    To return the Personality Quiz click the button below 
+    <p style="font-size: 36;"> To return the Personality Quiz click the button below </p>
     <br>
     <br>
 
-    <button onclick="back()">Personality Quiz</button>
+    <button onclick="back()" class="button">Personality Quiz</button>
 
     <script type="text/javascript">
     function back(){
