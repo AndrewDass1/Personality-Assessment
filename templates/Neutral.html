@@ -4,68 +4,74 @@
         body {text-align: center;}
     
         body {
-            background-color: yellowgreen;
+            background-color: #9acd32;
         }
         div {
-            height: 1350px;
+            height: 1500px;
             margin: 150px;
             border: 5px solid;
             background-color: #FFFFFF;
         }
+
+        .button {
+        background-color: #9acd32;
+        border: 2px solid black;
+        color: white;
+        padding: 30px 64px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 32px;
+        margin: 4px 2px;
+        cursor: pointer;
+        }
+
     </style>
 
     <div>
     
-        <h1> Personality: Neutral </h1>
+        <h1 style = "font-size:100px;"> Personality: Neutral </h1>
 
         <img src="home/andrew/Documents/Projects/suicidepre/templates/neutralface.png"> 
 
-    <p> 
-        It seems you make both right and wrong choices, and you may have regrets, but always remember to try your best! 
-        <br>
-        As long as you do not give up, your hard work and effort will ensure you to completing your goals faster.
+    <p style = "font-size:36px;"> 
+        It seems you make both right and wrong choices, and you may have regrets, but always remember to try your best! As long as you do not give up, your hard work and effort will ensure you to completing your goals!
         <br>
         <br>
-        If you are feeling lost, then its advised to talk to a family member or close friend for advice. 
+        If you are feeling lost, then its advised to talk to a family member or a close friend for advice. 
         <br>
         <br>
-        If you are feeling suicidal, help is available. Please call 1-800-273-8255 for the Suicide Prevention Lifeline <br>
-        or click the button below to enter the Suicide Prevention Lifeline website.
+        If you are feeling suicidal, help is available. Please call 1-800-273-8255 for the Suicide Prevention Lifeline or click the button below to enter the Suicide Prevention Lifeline website.
     </p>
 
 
    
 
-    <button class="btn btn-success" onclick=" window.open('https://suicidepreventionlifeline.org/','_blank')"> Suicide Prevention Lifeline</button>
+    <button class="button" onclick=" window.open('https://suicidepreventionlifeline.org/','_blank')"> Suicide Prevention Lifeline</button>
+
 
     <br>
     <br>
     <br>
     <br>
 
-    If you have a substance use problem, help is available from American Addiction Centers. Please call 886-827-2824 <br>  
-    or click the button below to enter the American Addiction Centers website.
+    <p style = "font-size:36px;"> If you have a substance use problem, help is available from American Addiction Centers. Please call 886-827-2824 
+        or click the button below to enter the American Addiction Centers website. </p> 
     <br>
     <br>
     
-    <button onclick="addiction()">American Addiction Centers Website</button>
-    <br>
+    <button class="button" onclick=" window.open('https://americanaddictioncenters.org/','_blank')"> American Addiction Centers Website</button>
 
-    <script type= "text/javascript">
-        function addiction(){
-            location.replace("https://americanaddictioncenters.org/")
-        }
-    </script>
 
     <br>
     <br>
     <br>
 
-    To return the Personality Quiz click the button below 
+    <p style = "font-size:36px;"> To return the Personality Quiz click the button below  </p>
     <br>
     <br>
 
-    <button onclick="back()">Personality Quiz</button>
+    <button onclick="back()" class="button">Personality Quiz</button>
 
     <script type="text/javascript">
     function back(){
